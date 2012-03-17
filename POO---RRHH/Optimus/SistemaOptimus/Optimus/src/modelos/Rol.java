@@ -7,7 +7,7 @@ package modelos;
 //  @ Project : Untitled
 //  @ File Name : Rol.java
 //  @ Date : 16/03/2012
-//  @ Author : 
+//  @ Author : RicardoGS
 //
 //
 
@@ -17,7 +17,7 @@ package modelos;
 public class Rol {
 	private String nombre;
 	private String descrip;
-	private String codModulo = "ADMROL";
+	private String codigoModulo = "ADMROL";
 	private String codigo;
 
     public String getCodigo() {
@@ -45,7 +45,7 @@ public class Rol {
     }
 
     public String getCodModulo() {
-        return codModulo;
+        return codigoModulo;
     }
         
         

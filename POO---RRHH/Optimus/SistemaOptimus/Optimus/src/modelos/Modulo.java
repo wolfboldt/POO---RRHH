@@ -15,7 +15,7 @@ package modelos;
 
 
 public class Modulo {
-	private String codModulo = "ADMROL";
+	private String codigoModulo = "ADMROL";
         private String codigo;
 	private String nombre;
 	private Boolean acceso;
