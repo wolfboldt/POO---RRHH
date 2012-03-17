@@ -1,0 +1,63 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package controladoras;
+
+import controladoras.AdmUsuarios;
+import org.junit.Test;
+import static org.junit.Assert.*;
+
+
+/**
+ *
+ * @author mguerrero
+ * 
+ */
+public class AdmUsuarioTest {
+    
+    AdmUsuarios admUsuarios = new AdmUsuarios();
+
+    @Test
+    public void siNoingresoElusuarioMeDebeDarError(){
+        assertFalse(admUsuarios.verificarUsuario(null));
+        System.out.println("Usuario no debe estar vacio");
+    }
+    
+    @Test
+    public void siNoingresoElNombreDebeDarError(){
+        assertFalse(admUsuarios.validarUsuario(null));
+        System.out.println("El nombre no debe estar vacio");
+    }
+    
+    @Test
+    public void siNoIngresoelDniDebeDarError(){
+        assertFalse(admUsuarios.validarDNI(null));
+        System.out.println("El DNI no debe de estar vacio");
+    }
+    
+    @Test
+    public void siNoIngresoelApePatDebeDarError(){
+        assertFalse(admUsuarios.validarApellidoPaterno(null));
+        System.out.println("El apellido paterno no debe de estar vacio");
+    }
+    
+    @Test
+    public void siNoIngresoelApeMatDebeDarError(){
+        assertFalse(admUsuarios.validarApellidoMatermo(null));
+        System.out.println("El apellido materno no debes de estar vacio");
+    }
+    
+    @Test
+    public void siNoIngresoelPasswordDebeDarError(){
+        assertFalse(admUsuarios.validarPassword(null));
+        System.out.println("El password no debe de estar vacio");
+    }
+    
+    @Test
+    public void siNoIngresoelCorreoDebeDarError(){
+        String xrespuesta = "XXXXXXXXX XXXXXXXXXXX";
+        assertFalse(xrespuesta.toString(), !admUsuarios.validarPassword(null));
+        //System.out.println("No paso nada!!!!!!");
+    }
+}
