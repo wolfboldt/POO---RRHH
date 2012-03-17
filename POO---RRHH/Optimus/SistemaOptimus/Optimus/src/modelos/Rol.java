@@ -17,8 +17,36 @@ package modelos;
 public class Rol {
 	private String nombre;
 	private String descrip;
-	private String codModulo;
+	private String codModulo = "ADMROL";
 	private String codigo;
+
+    public String getCodigo() {
+        return codigo;
+    }
+
+    public void setCodigo(String codigo) {
+        this.codigo = codigo;
+    }
+
+    public String getDescrip() {
+        return descrip;
+    }
+
+    public void setDescrip(String descrip) {
+        this.descrip = descrip;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getCodModulo() {
+        return codModulo;
+    }
         
         
 }
