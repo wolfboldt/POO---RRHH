@@ -16,6 +16,14 @@ public class XXX {
         this.dni = dni;
         this.nombre = nombre;
     }
+
+    public String getDni() {
+        return dni;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
     
     
 }
