@@ -57,8 +57,12 @@ public class AdmUsuarioTest {
     @Test
     public void siNoIngresoelCorreoDebeDarError(){
         assertFalse(admUsuarios.validarCorreo(null));
-        //System.out.println("El correo no debe de estar vacio");
+        System.out.println("El correo no debe de estar vacio");
     }
     
-    
+    @Test
+    public void siNoTieneFechaIngresoDebeDarError(){
+        assertFalse(admUsuarios.validarFecha(null));
+        System.out.println("La fecha no debe de estar vacia");
+    }
 }

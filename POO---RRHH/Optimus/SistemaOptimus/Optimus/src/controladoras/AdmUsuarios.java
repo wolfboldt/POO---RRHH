@@ -73,4 +73,11 @@ public class AdmUsuarios {
         return false;
     }
     
+    public boolean validarFecha(Date fIngreso){
+        if (fIngreso != null){
+            return true;
+        }
+        return false;
+    }
+    
 }
