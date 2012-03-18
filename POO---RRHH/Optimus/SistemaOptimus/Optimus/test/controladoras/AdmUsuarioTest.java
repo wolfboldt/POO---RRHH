@@ -56,8 +56,9 @@ public class AdmUsuarioTest {
     
     @Test
     public void siNoIngresoelCorreoDebeDarError(){
-        String xrespuesta = "XXXXXXXXX XXXXXXXXXXX";
-        assertFalse(xrespuesta.toString(), !admUsuarios.validarPassword(null));
-        //System.out.println("No paso nada!!!!!!");
+        assertFalse(admUsuarios.validarCorreo(null));
+        //System.out.println("El correo no debe de estar vacio");
     }
+    
+    
 }

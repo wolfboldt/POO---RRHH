@@ -60,10 +60,17 @@ public class AdmUsuarios {
     }
     
     public boolean validarPassword(String password){
+        if (password != null){
+            return true;
+        }
         return false;
     }
     
-    public boolean validarCoreeo(String correo){
-        return true;
+    public boolean validarCorreo(String correo){
+        if (correo != null){
+            return true;
+        }
+        return false;
     }
+    
 }
