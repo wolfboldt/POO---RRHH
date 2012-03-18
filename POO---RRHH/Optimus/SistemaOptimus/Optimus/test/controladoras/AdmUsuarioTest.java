@@ -65,4 +65,15 @@ public class AdmUsuarioTest {
         assertFalse(admUsuarios.validarFecha(null));
         System.out.println("La fecha no debe de estar vacia");
     }
+    
+    @Test
+    public void siNoIngresaCargoDebeDarError(){
+        assertFalse(admUsuarios.validarCargo(null));
+        System.out.println("El cargo no debe de estar vacio");
+    }
+    
+    @Test
+    public void siNoIngresaCodigoRolDebeDarError(){
+        assertFalse(admUsuarios.validarCodigoRol(null));
+    }
 }

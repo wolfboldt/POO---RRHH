@@ -80,4 +80,17 @@ public class AdmUsuarios {
         return false;
     }
     
+    public boolean validarCargo(String cargo){
+        if (cargo != null){
+            return true;
+        }
+        return false;
+    }
+    
+    public boolean validarCodigoRol(String codigoRol){
+        if (codigoRol != null){
+            return true;
+        }
+        return false;
+    }
 }
