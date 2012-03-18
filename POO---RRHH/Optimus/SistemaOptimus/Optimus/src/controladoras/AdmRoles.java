@@ -4,6 +4,8 @@
  */
 package controladoras;
 
+import modelos.ModuloXRol;
+
 /**
  *
  * @author Ricardo
@@ -11,11 +13,13 @@ package controladoras;
 public class AdmRoles {
     
     
+    private ModuloXRol objModuloxRol = new ModuloXRol();
+    
     public Boolean validaRol(String rol){
         
         Boolean valido = false;
         
-        if(rol != ""){
+        if(rol !=""){
             valido = true;
         }
         
@@ -26,11 +30,13 @@ public class AdmRoles {
         
         Boolean valido = false;
         
-        if(descrip != ""){
+        if(descrip !=""){
             valido = true;
         }
         
         return valido;
     }
+    
+    
     
 }
