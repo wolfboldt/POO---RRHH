@@ -8,7 +8,6 @@ package controladoras;
  *
  * @author EDGE XIII
  */
-public class TareasGenerales {
-    //prueba2
+public class ClaseXXX {
     
 }
